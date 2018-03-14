@@ -40,7 +40,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="27dp"
         android:contentDescription="@string/msoft"
-        android:fontFamily="@font/casual tossed"
+        android:fontFamily="@font/casual_tossed"
         android:text="@string/msoft"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"
