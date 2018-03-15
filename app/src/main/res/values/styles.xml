@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/screenColor</item>
         <item name="colorPrimaryDark">@color/screenColor</item>
@@ -9,7 +9,7 @@
     </style>
 
     <!-- style for the selection option activity-->
-    <style name="ApTheme" parent="Theme.AppCompat.Light">
+    <style name="ApTheme" parent="Theme.AppCompat">
 
         <item name="colorPrimary">@color/screenColor</item>
         <item name="colorPrimaryDark">@color/screenColor</item>

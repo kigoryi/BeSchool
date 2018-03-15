@@ -5,16 +5,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    android:theme="@style/AppTheme"
     tools:context="com.example.mwami.be_school.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MkSoft"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/msoft"
+        android:textColor="@color/screenColor"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ViewFlipper
+        android:id="@+id/viewF"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/con"
+            android:src="@drawable/learn" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/learning"
+            android:src="@drawable/grow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/growing"
+            android:src="@drawable/connect" />
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="141dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewF"
+        android:background="@color/screenColor"
+        android:ems="10"
+        android:gravity="center"
+        android:text="@string/con"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        tools:text="@string/con" />
+
+    <TextView
+        android:id="@+id/learn"
+        android:layout_width="141dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/connect"
+        android:layout_toEndOf="@+id/connect"
+        android:layout_toRightOf="@+id/connect"
+        android:background="@color/screenColor"
+        android:gravity="center_horizontal|center"
+        android:text="@string/learning"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/grow"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/viewF"
+        android:layout_toEndOf="@+id/learn"
+        android:layout_toRightOf="@+id/learn"
+        android:background="@color/screenColor"
+        android:gravity="center"
+        android:text="@string/growing"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
 
 </RelativeLayout>

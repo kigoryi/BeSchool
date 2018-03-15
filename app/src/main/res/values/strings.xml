@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">Be-School</string>
+    <string name="app_name">Be-School</string   >
     <string name="logo_app">logo</string>
     <string name="msoft">MkSoft</string>
     <string name="mushRoom">logoMush</string>
+    <string name="learning">Learn</string>
+    <string name="growing">Grow</string>
+    <string name="con">Connect</string>
 </resources>
